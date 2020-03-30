@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName">
+        </fieldset>
+        <fieldset>
+            <legend>Contact information</legend>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <p>Gender</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="na" name="gender">
+            <label for="na">N/A</label>
+            <p>What are you intersted in?</p>
+            <input type="checkbox" id="sport" name="interest">
+            <label for="sport">Sports</label>
+            <input type="checkbox" id="books" name="interest">
+            <label for="books">Books</label>
+            <input type="checkbox" id="animals" name="interest">
+            <label for="animals">Animals</label>
+            <input type="checkbox" id="movies" name="interest">
+            <label for="movies">Movies</label>
+        </fieldset>
+<button type="submit">Save</button>
+    </form>
+</body>
+</html>
